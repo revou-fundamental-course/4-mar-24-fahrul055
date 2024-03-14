@@ -28,17 +28,17 @@ function onFormSubmit(e) {
 
   bmiText.textContent = bmi.toFixed(2);
   bmiText.className = desc;
-  descText.innerHTML = `<strong>${desc}</strong>`;
+  descText.innerHTML = `<strong>You Are ${desc}</strong>`;
 }
 
 function interpretBMI(bmi) {
   if (bmi < 18.5) {
-    return "Anda Memiliki Kekurangan Berat Badan ";
+    return "underweight";
   } else if (bmi < 25) {
-    return "Anda Memilki Berat Badan Anda Normal";
+    return "healthy";
   } else if (bmi < 30) {
-    return "Anda Memiliki Berat Badan Berlebih";
+    return "overweight";
   } else {
-    return "Obesitas";
+    return "obesity";
   }
 }

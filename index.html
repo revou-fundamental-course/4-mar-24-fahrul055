@@ -20,15 +20,15 @@
 
         <form class="calculator">
             <div>
-                <label for="usia">Usia</label>
-                <input type="text" id="usia" value="">
+                <label for="age">Age</label>
+                <input type="text" id="age" value="">
             </div>
             <div>
-                <label for="jeniskelamin">Jenis Kelamin</label>
-                <select id="jeniskelamin" name="jeniskelamin">
-                    <option value="pilihjeniskelamin">-- Pilih Jenis Kelamin --</option>
-                    <option value="lakilaki">Laki-laki</option>
-                    <option value="perempuan">Perempuan</option>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="selectgender">-- Select Your Gender --</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                 </select>
             </div>
             <div>
@@ -41,11 +41,11 @@
             </div>
             <div>
                 <button type="reset">Reset</button>
-                <button type="submit">Submit</button>
+                <button type="submit">Count</button>
             </div>
         </form>
         <section class="output">
-            <h3>Your BMI is</h3>
+            <h3>Your BMI Is</h3>
             <p id="bmi">0</p>
             <p id="desc">N/A</p>
         </section>
@@ -54,16 +54,16 @@
                 <h4>Underweight</h4>
                 <p>&lt; 18.5</p>
             </div>
-            <div style="--color: var(--normal)">
-                <h4>Normal</h4>
+            <div style="--color: var(--healthy)">
+                <h4>Healthy</h4>
                 <p>18.5 – 25</p>
             </div>
             <div style="--color: var(--overweight)">
                 <h4>Overweight</h4>
                 <p>25 – 30</p>
             </div>
-            <div style="--color: var(--obese)">
-                <h4>Obesitas</h4>
+            <div style="--color: var(--obesity)">
+                <h4>Obesity</h4>
                 <p>≥ 30</p>
             </div>
         </section>

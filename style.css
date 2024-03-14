@@ -1,12 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+:root {
+    --underweight: orange;
+    --healthy: green;
+    --overweight: lightcoral;
+    --obesity: crimson;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 body {
-    background: #a10159;
+    background: #001550;
     display: grid;
     place-items: center;
     height: 100vh;
@@ -46,7 +55,7 @@ h1 {
 .calculator input {
     flex: 1;
     border: 1px solid #ccc;
-    border-radius: 1px;
+    border-radius: 5px;
     padding: 10px;
     outline-color: #555;
     font-size: 1.25rem;
@@ -59,14 +68,14 @@ h1 {
     border: none;
     cursor: pointer;
     padding: 10px;
-    background: #00a1a3;
+    background: #007be0;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .calculator button[type="reset"] {
-    background: #2e2e2e;
+    background: #444;
 }
 
 .calculator button:hover {
@@ -107,20 +116,13 @@ h1 {
 }
 
 .healthy {
-    color: var(--normal);
+    color: var(--healthy);
 }
 
 .overweight {
     color: var(--overweight);
 }
 
-.obese {
-    color: var(--obese);
-}
-
-:root {
-    --underweight: orange;
-    --normal: green;
-    --overweight: lightcoral;
-    --obese: crimson;
+.obesity {
+    color: var(--obesity);
 }
