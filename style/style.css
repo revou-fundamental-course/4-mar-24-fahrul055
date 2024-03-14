@@ -126,3 +126,10 @@ h1 {
 .obesity {
     color: var(--obesity);
 }
+.container-apps {
+    text-align: center;
+}
+
+.container-apps img {
+    width: 300px;
+}
